@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="estilos2.css">
+<head>
+	<title>Tabla</title>
+</head>
+<body>
+<h2>Bienvenido</h2>
+
+<script type="text/javascript">
+ 
+  
+  
+ 
+    var nombre=0, sumatori=0, x=0;
+ 
+    nombre=parseInt(prompt("numero entero : ",""));
+    document.write("!" + nombre + "      =      " + nombre + " * ");
+ 	sumatori=nombre;
+	 for(x=nombre-1; x>0; x--)
+    {
+     if (x!=1)
+      document.write(x + " * ");
+     else 
+      document.write(x + "      =    ");
+ 
+     sumatori=sumatori * x;
+    }
+    document.write(sumatori);
+   
+ 
+  </script>
+  
+ 
+
+
+<TABLE BORDER CELLPADDING=10 CELLSPACING=0>
+	<TR>
+		<TH BGCOLOR="black">Interacion</TH>
+		<TH BGCOLOR="black">Expresion</TH>
+		<TH BGCOLOR="black">Valor</TH>
+	</TR>
+	<TR>
+		<TD></TD>
+	    	<TD> </TD>
+	    	<TD><br> </TD>
+	</TR>
+	<TR>
+		<TD></TD>
+	    	<TD><br></TD>
+	    	<TD></TD>
+	</TR>
+</TABLE>
+
+
+</body>
+</html>

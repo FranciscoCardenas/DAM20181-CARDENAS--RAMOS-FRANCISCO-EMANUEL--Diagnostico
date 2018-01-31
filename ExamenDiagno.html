@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="estilos.css">
+<head>
+	<title>Examen Diagnostico </title>
+</head>
+<body>
+
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.clave.value=='' && document.form.usuario.value=='') {alert("Ingresar usuario y Contraseña"); } else {
+if (document.form.clave.value=='admin' ){
+ if (document.form.usuario.value=='admin') {
+ 	 document.form.submit(); 
+ 	}else{
+ 		alert("Usuario incorrecto"); 
+ 	}
+
+}else{alert("Contraseña incorrecta"); }
+
+}
+}
+
+</SCRIPT>
+
+<form  name=form action="tabla.html">
+	<h2>Login</h2>
+	<input type="text" placeholder=Usuario name=usuario>
+	<input type="password" placeholder=Contraseña name=clave>
+	<input onclick=go()  type=button  value = "Ingresar" >
+
+	
+
+</form>
+
+</body>
+</html>
